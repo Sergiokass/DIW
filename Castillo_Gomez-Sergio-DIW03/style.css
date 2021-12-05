@@ -1,0 +1,186 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+
+body{
+    background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+h1{
+    font-weight: 700;
+}
+
+h2{
+    font-size: 0.5em;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+
+#logo{
+    flex-grow: 1;
+    object-fit: contain;
+    height: 2em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;
+    font-size: 0.5em;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #D62F32;
+}
+
+#fondoHero{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(40%);
+}
+
+.textoHero{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em;
+}
+
+.container img{
+    border-radius: 5%;
+    width: 15.625em;
+    height: 15.625em;
+}
+
+.container div{
+    width: 400px;
+    margin-top: 1em;
+}
+
+.titulo{
+    color: #333333;
+    font-weight: 700;
+}
+
+.subtitulo{
+    color: #6F1617;
+}
+
+.concurso{
+    background-color: #DDDDDD;
+    text-align: center;
+    padding: 6em 2em;
+    font-size: 0.5em;
+}
+
+#tituloConcurso{
+    position: relative;
+    width: 26.7em;
+    margin: 0 auto;
+    left: 5em;
+}
+
+#concursoDistribucion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#concursoDistribucion img{
+    margin-top: 3em;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #3E484E;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.75em;
+    padding: 0.5em;
+}
+
+.icon{
+    width: 0.75em;
+    height: 0.75em;
+}
+
+footer a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
